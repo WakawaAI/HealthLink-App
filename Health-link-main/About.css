@@ -1,0 +1,41 @@
+/* ABOUT PAGE */
+
+.about{
+    padding:80px 8%;
+    background:#FAFFFC;
+}
+
+.about-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.about h1{
+    text-align:center;
+    color:#2F5D50;
+    font-size:48px;
+    margin-bottom:30px;
+}
+
+.about h2{
+    color:#2F5D50;
+    margin-top:40px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+    text-align:justify;
+}
+
+.values{
+    list-style:none;
+    padding:0;
+}
+
+.values li{
+    margin:15px 0;
+    font-size:18px;
+    color:#2F5D50;
+}

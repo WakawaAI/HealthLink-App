@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | HealthLink</title>
+
+    <link rel="stylesheet" href="../health.css">
+    <link rel="stylesheet" href="../Services.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="../Health Logo.png" alt="HealthLink Logo">
+            <h2>HealthLink</h2>
+        </div>
+
+        <ul>
+            <li><a href="../healthlink/healthlink.html">Home</a></li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="../Services/Services.html">Services</a></li>
+            <li><a href="../Doctors/Doctors.html">Doctors</a></li>
+            <li><a href="../Hospitals/Hospitals.html">Hospitals</a></li>
+            <li><a href="../Emergency/Emergency.html">Emergency</a></li>
+            <li><a href="../Contact/Contact.html">Contact</a></li>
+        </ul>
+
+        <div class="buttons">
+            <a href="../Login/Login.html" class="login-btn">Login</a>
+            <a href="../Register/Register.html" class="register-btn">Register</a>
+        </div>
+
+    </nav>
+</header>
+
+<section class="services">
+
+    <div class="services-title">
+        <h1>Our Services</h1>
+        <p>
+            HealthLink provides a wide range of healthcare services designed to
+            connect patients with medical professionals quickly and efficiently.
+        </p>
+    </div>
+
+    <div class="service-container">
+      <a href="#appointment-booking" class="service-card" id="appointmentCard">
+    <i class="fa-solid fa-calendar-check"></i>
+    <h3>Appointment Booking</h3>
+    <p>Schedule appointments with doctors and hospitals in just a few clicks.</p>
+</a>
+
+        <div class="service-card" id="consultationCard">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>Online Consultation</h3>
+            <p>Chat or consult with licensed healthcare professionals from anywhere.</p>
+        </div>
+
+        <a href="#hospital-locator" class="service-card" id="hospitalCard">
+            <i class="fa-solid fa-hospital"></i>
+            <h3>Hospital Locator</h3>
+            <p>Find hospitals and clinics close to your current location.</p>
+        </a>
+
+        <a href="#emergency-assistance" class="service-card" id="emergencyCard">
+            <i class="fa-solid fa-truck-medical"></i>
+            <h3>Emergency Assistance</h3>
+            <p>Request emergency medical support when immediate help is needed.</p>
+        </a>
+
+        <div class="service-card">
+            <i class="fa-solid fa-file-medical"></i>
+            <h3>Medical Records</h3>
+            <p>Securely access and manage your healthcare records online.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fa-solid fa-pills"></i>
+            <h3>Pharmacy Services</h3>
+            <p>Locate nearby pharmacies and receive prescription information.</p>
+        </div>
+    </div>
+    <!-- ================= APPOINTMENT BOOKING ================= -->
+
+<section class="appointment-section" id="appointment-booking">
+
+    <h1>Appointment Booking</h1>
+
+    <p class="appointment-text">
+        Please select your preferred medical specialty and complete the registration form before booking your appointment.
+    </p>
+
+    <h2>Available Medical Specialists</h2>
+
+    <div class="doctor-list">
+
+        <div class="doctor-card">
+            <h3>Anesthesiologist</h3>
+            <p>Provides pain relief and anesthesia before, during and after surgery.</p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Radiologist</h3>
+            <p>Uses X-rays, CT scans and MRI scans to diagnose diseases.</p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Pathologist</h3>
+            <p>Examines blood and tissue samples to diagnose illnesses.</p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Medical Geneticist</h3>
+            <p>Diagnoses and treats inherited genetic disorders.</p>
+        </div>
+
+    </div>
+
+    <h2>Patient Registration</h2>
+
+    <form id="patientForm">
+
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Age</label>
+        <input type="number" required>
+
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <label>Email Address</label>
+        <input type="email" required>
+
+        <label>Residential Address</label>
+        <textarea rows="3" required></textarea>
+
+        <label>Height (Optional)</label>
+        <input type="text">
+
+        <label>Genotype</label>
+
+        <select required>
+            <option value="">Select Genotype</option>
+            <option>AA</option>
+            <option>AS</option>
+            <option>AC</option>
+            <option>SS</option>
+            <option>SC</option>
+        </select>
+
+        <label>Blood Group</label>
+
+        <select required>
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <label>
+            Do you have any underlying medical condition?
+        </label>
+
+        <select required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <textarea
+        rows="3"
+        placeholder="If yes, please specify."></textarea>
+
+        <label>
+            Have you ever been diagnosed with a cardiovascular or heart-related condition?
+        </label>
+
+        <select required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <textarea
+        rows="3"
+        placeholder="If yes, please provide details."></textarea>
+
+        <label>
+            Have you ever been diagnosed with asthma or experienced asthma-related symptoms?
+        </label>
+
+        <select required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <textarea
+        rows="3"
+        placeholder="If yes, please provide details."></textarea>
+
+        <button type="button" id="nextBtn">
+            Continue to Booking â†’
+        </button>
+
+    </form>
+
+    <div id="bookingSection" style="display:none; margin-top:50px;">
+
+        <h2>Book Your Appointment</h2>
+
+        <label>Select Doctor</label>
+
+        <select id="doctorSelect">
+
+            <option value="">Choose a Doctor</option>
+
+            <option>Dr. John Williams - Anesthesiologist</option>
+
+            <option>Dr. Sarah Johnson - Radiologist</option>
+
+            <option>Dr. Michael Brown - Pathologist</option>
+
+            <option>Dr. Grace David - Medical Geneticist</option>
+
+        </select>
+
+        <label>Select Appointment Date</label>
+
+        <input type="date" id="appointmentDate">
+
+        <label>Select Appointment Time</label>
+
+        <select id="appointmentTime">
+
+            <option value="">Choose Time</option>
+
+            <option>9:00 AM</option>
+
+            <option>10:00 AM</option>
+
+            <option>11:30 AM</option>
+
+            <option>1:00 PM</option>
+
+            <option>2:30 PM</option>
+
+            <option>4:00 PM</option>
+
+        </select>
+
+        <br><br>
+
+        <button type="button" id="bookBtn">
+            Book Appointment
+        </button>
+
+    </div>
+    <script>
+const nextBtn = document.getElementById("nextBtn");
+const bookingSection = document.getElementById("bookingSection");
+const bookBtn = document.getElementById("bookBtn");
+
+nextBtn.addEventListener("click", function () {
+
+    // Show the booking section
+    bookingSection.style.display = "block";
+
+    // Scroll smoothly to it
+    bookingSection.scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
+
+bookBtn.addEventListener("click", function () {
+
+    const doctor = document.getElementById("doctorSelect").value;
+    const date = document.getElementById("appointmentDate").value;
+    const time = document.getElementById("appointmentTime").value;
+
+    if (doctor === "" || date === "" || time === "") {
+
+        alert("Please select a doctor, appointment date and time.");
+
+        return;
+    }
+
+    alert("Appointment request submitted successfully!\n\nPlease wait while your doctor reviews your request.");
+
+});
+</script>
+
+</section>
+<!-- ================= ONLINE CONSULTATION ================= -->
+
+<section class="consultation-section" id="online-consultation">
+
+    <h1>Online Consultation</h1>
+
+    <p class="consultation-text">
+        Connect with experienced doctors from anywhere through chat,
+        voice calls or video consultations.
+    </p>
+
+    <div class="consultation-doctors">
+
+        <div class="consult-doctor-card">
+
+            <img src="../Doctor1.jpg" alt="Doctor">
+
+            <h3>Dr. Sarah Johnson</h3>
+
+            <p>Cardiologist</p>
+
+            <p class="rating">
+                â­â­â­â­â­
+            </p>
+
+            <button class="consult-btn">
+                Consult Now
+            </button>
+
+        </div>
+
+        <div class="consult-doctor-card">
+
+            <img src="../Doctor2.jpg" alt="Doctor">
+
+            <h3>Dr. Michael Brown</h3>
+
+            <p>Pediatrician</p>
+
+            <p class="rating">
+                â­â­â­â­â˜†
+            </p>
+
+            <button class="consult-btn">
+                Consult Now
+            </button>
+
+        </div>
+
+        <div class="consult-doctor-card">
+
+            <img src="../Doctor3.jpg" alt="Doctor">
+
+            <h3>Dr. Grace David</h3>
+
+            <p>General Physician</p>
+
+            <p class="rating">
+                â­â­â­â­â­
+            </p>
+
+            <button class="consult-btn">
+                Consult Now
+            </button>
+
+        </div>
+
+        <div class="consult-doctor-card">
+
+            <img src="../Doctor4.jpg" alt="Doctor">
+
+            <h3>Dr. James Wilson</h3>
+
+            <p>Neurologist</p>
+
+            <p class="rating">
+                â­â­â­â­â˜†
+            </p>
+
+            <button class="consult-btn">
+                Consult Now
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Consultation Options -->
+
+    <div id="consultOptions" style="display:none;">
+
+        <h2>Select Consultation Type</h2>
+
+        <div class="consultation-options">
+
+            <div class="option-box">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <h3>Chat Consultation</h3>
+
+                <p>â‚¦1,500 per session</p>
+
+                <button>Chat</button>
+
+            </div>
+
+            <div class="option-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Voice Call</h3>
+
+                <p>â‚¦3,000 per session</p>
+
+                <button>Voice Call</button>
+
+            </div>
+
+            <div class="option-box">
+
+                <i class="fa-solid fa-video"></i>
+
+                <h3>Video Call</h3>
+
+                <p>â‚¦5,000 per session</p>
+
+                <button>Video Call</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+const consultButtons = document.querySelectorAll(".consult-btn");
+const consultOptions = document.getElementById("consultOptions");
+
+consultButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+consultOptions.style.display="block";
+
+consultOptions.scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const appointmentCard = document.getElementById("appointmentCard");
+    const consultationCard = document.getElementById("consultationCard");
+    const hospitalCard = document.getElementById("hospitalCard");
+    const emergencyCard = document.getElementById("emergencyCard");
+
+    const appointmentSection = document.querySelector(".appointment-section");
+    const consultationSection = document.querySelector(".consultation-section");
+    const hospitalSection = document.querySelector(".hospital-section");
+    const emergencySection = document.querySelector(".emergency-section");
+
+    // Appointment Booking
+    appointmentCard.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        appointmentSection.style.display = "block";
+        consultationSection.style.display = "none";
+        hospitalSection.style.display = "none";
+        emergencySection.style.display = "none";
+
+        appointmentSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+    // Online Consultation
+    consultationCard.addEventListener("click", function(){
+
+        consultationSection.style.display = "block";
+        appointmentSection.style.display = "none";
+        hospitalSection.style.display = "none";
+        emergencySection.style.display = "none";
+
+        consultationSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+    // Hospital Locator
+    hospitalCard.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        hospitalSection.style.display = "block";
+
+        appointmentSection.style.display = "none";
+        consultationSection.style.display = "none";
+        emergencySection.style.display = "none";
+
+        hospitalSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+    // Emergency Assistance
+    emergencyCard.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        emergencySection.style.display = "block";
+
+        appointmentSection.style.display = "none";
+        consultationSection.style.display = "none";
+        hospitalSection.style.display = "none";
+
+        emergencySection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+});
+
+</script>
+<section class="hospital-section" id="hospital-locator">
+
+    <h1>Hospital Locator</h1>
+
+    <p class="hospital-text">
+        Find registered HealthLink hospitals near your current location and receive
+        live directions.
+    </p>
+
+    <div class="location-box">
+
+        <h3>Your Current Location</h3>
+
+        <input type="text"
+               id="userLocation"
+               placeholder="Your location will appear here..."
+               readonly>
+
+        <button id="gpsBtn">
+            ðŸ“ Use My Current Location
+        </button>
+
+        <button id="nearestBtn">
+            ðŸ¥ Find Nearest Hospital
+        </button>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="hospitalSearch"
+            placeholder="Search hospital by name, city or state">
+
+        <button>
+            Search
+        </button>
+
+    </div>
+
+    <h2>Nearby Hospitals</h2>
+
+    <div id="hospitalList">
+
+        <!-- Hospital cards will appear here -->
+
+    </div>
+
+    <div id="hospitalMap">
+
+        <!-- Google Maps / Leaflet Map -->
+
+    </div>
+
+</section>
+
+<section class="emergency-section" id="emergency-assistance">
+
+    <h1>Emergency Assistance</h1>
+
+    <p class="emergency-text">
+        In urgent situations, contact a nearby emergency hospital directly. Each entry includes the hospital location and a dedicated emergency care line for immediate access.
+    </p>
+
+    <h2>Emergency Hospital Contacts</h2>
+
+    <div class="emergency-list">
+
+        <article class="emergency-card">
+            <h3>HealthLink Central Emergency Centre</h3>
+            <p><strong>Location:</strong> Central District, City Hospital Road</p>
+            <p><strong>Emergency Care Line:</strong> <a href="tel:+2348001234567">+234 800 123 4567</a></p>
+            <p><strong>Availability:</strong> 24/7 emergency response</p>
+            <p><strong>Response:</strong> Rapid paramedic dispatch available</p>
+            <a class="call-btn" href="tel:+2348001234567">Call Emergency Line</a>
+        </article>
+
+        <article class="emergency-card">
+            <h3>St. Maryâ€™s Emergency Pavilion</h3>
+            <p><strong>Location:</strong> West Avenue, near the Riverside Clinic</p>
+            <p><strong>Emergency Care Line:</strong> <a href="tel:+2348002345678">+234 800 234 5678</a></p>
+            <p><strong>Availability:</strong> 24-hour trauma and emergency care</p>
+            <p><strong>Response:</strong> Immediate ambulance coordination</p>
+            <a class="call-btn" href="tel:+2348002345678">Call Emergency Line</a>
+        </article>
+
+        <article class="emergency-card">
+            <h3>City General Emergency Unit</h3>
+            <p><strong>Location:</strong> North Park, Junction 5</p>
+            <p><strong>Emergency Care Line:</strong> <a href="tel:+2348003456789">+234 800 345 6789</a></p>
+            <p><strong>Availability:</strong> Fully staffed emergency department</p>
+            <p><strong>Response:</strong> On-site emergency doctors 24/7</p>
+            <a class="call-btn" href="tel:+2348003456789">Call Emergency Line</a>
+        </article>
+
+    </div>
+
+</section>
+</body>
+</html>
+
+
+

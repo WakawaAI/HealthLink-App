@@ -1,0 +1,13 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+ENV/
+
+# Local SQLite Database (prevents uploading test user accounts)
+instance/
+*.db
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | HealthLink</title>
+  <link rel="stylesheet" href="../health.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    .register-form {
+      width: 90%;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 35px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .register-form h1 {
+      text-align: center;
+      color: #2F5D50;
+      margin-bottom: 25px;
+    }
+    .register-form label {
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 600;
+    }
+    .register-form input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+    .register-form button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #0077b6;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../Health Logo.png" alt="HealthLink Logo">
+        <h2>HealthLink</h2>
+      </div>
+      <ul>
+        <li><a href="../healthlink/healthlink.html">Home</a></li>
+        <li><a href="../About/About.html">About</a></li>
+        <li><a href="../Services/Services.html">Services</a></li>
+        <li><a href="../Doctors/Doctors.html">Doctors</a></li>
+        <li><a href="../Hospitals/Hospitals.html">Hospitals</a></li>
+        <li><a href="../Emergency/Emergency.html">Emergency</a></li>
+        <li><a href="../Contact/Contact.html">Contact</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="../Login/Login.html" class="login-btn">Login</a>
+        <a href="../Register/Register.html" class="register-btn">Register</a>
+      </div>
+    </nav>
+  </header>
+  <section class="register-form">
+    <h1>Create an Account</h1>
+    <!-- Added ID to form -->
+    <form id="register-form">
+      <label>Full Name</label>
+      <!-- Added ID to input -->
+      <input type="text" id="name" required>
+      <label>Email Address</label>
+      <!-- Added ID to input -->
+      <input type="email" id="email" required>
+      <label>Password</label>
+      <!-- Added ID to input -->
+      <input type="password" id="password" required>
+      <label>Confirm Password</label>
+      <input type="password" id="confirm-password" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- JavaScript linked at the bottom with ../ added -->
+  <script src="../api-config.js"></script>
+  <script src="../register.js"></script>
+</body>
+</html>

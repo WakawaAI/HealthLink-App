@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | HealthLink</title>
+  <link rel="stylesheet" href="../health.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../Health Logo.png" alt="HealthLink Logo">
+        <h2>HealthLink</h2>
+      </div>
+      <ul>
+        <li><a href="../healthlink/healthlink.html">Home</a></li>
+        <li><a href="../About/About.html">About</a></li>
+        <li><a href="../Services/Services.html">Services</a></li>
+        <li><a href="../Doctors/Doctors.html">Doctors</a></li>
+        <li><a href="../Hospitals/Hospitals.html">Hospitals</a></li>
+        <li><a href="../Emergency/Emergency.html">Emergency</a></li>
+        <li><a href="../Contact/Contact.html">Contact</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="../Login/Login.html" class="login-btn" id="nav-login">Login</a>
+        <a href="../Register/Register.html" class="register-btn" id="nav-register">Register</a>
+        <button id="nav-logout" class="register-btn" style="display: none; cursor: pointer; border: none;">Logout</button>
+      </div>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Welcome, <span id="username-display">User</span></h1>
+        <p>Review appointments, messages, and health updates from one central place.</p>
+        <a href="../Services/Services.html" class="hero-btn">Manage Services</a>
+      </div>
+      <div class="hero-image">
+        <img src="../Doctor.png" alt="Doctor">
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="services-title">
+      <h1>Your Recent Activity</h1>
+      <p>Quick access to your latest appointments, consultations, and support requests.</p>
+    </div>
+    <div class="service-container">
+      <div class="service-card"><i class="fa-solid fa-calendar-check"></i><h3>Upcoming Appointment</h3><p>Dr. Sarah Johnson on Friday at 10:00 AM</p></div>
+      <div class="service-card"><i class="fa-solid fa-comments"></i><h3>Latest Chat</h3><p>Message received from your doctor about lab results.</p></div>
+      <div class="service-card"><i class="fa-solid fa-hospital"></i><h3>Nearest Hospital</h3><p>City General Emergency Unit is 1.2 km away.</p></div>
+    </div>
+  </section>
+
+  <!-- JavaScript linked at the bottom -->
+  <script src="../api-config.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
