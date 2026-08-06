@@ -8,7 +8,8 @@ from functools import wraps
 
 app = Flask(__name__)
 # URL of the exact frontend URL
-CORS(app, origins=["https://healthlink-frontend-bx3m.onrender.com"], supports_credentials=True)
+# This opens the backend to all traffic so we can test if it works
+CORS(app)
 
 # --- CONFIGURATION ---
 app.config['SECRET_KEY'] = 'your_super_secret_key' # Used to sign the JWT tokens
