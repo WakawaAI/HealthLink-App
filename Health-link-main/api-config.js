@@ -1,5 +1,5 @@
 // api-config.js
-const API_BASE_URL = "http://127.0.0.1:5000/api"; // Change this to your live backend URL later
+const API_BASE_URL = "https://healthlink-app-foov.onrender.com"; // Change this to your live backend URL later
 
 // Helper function for making authenticated requests
 async function fetchFromAPI(endpoint, options = {}) {
