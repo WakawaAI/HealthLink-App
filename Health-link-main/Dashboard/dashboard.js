@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (response.ok) {
             const userData = await response.json();
             
-            // Dynamically update the welcome message with the user's actual name
-            const welcomeElement = document.getElementById("welcome-message");
-            if (welcomeElement && userData.name) {
-                welcomeElement.textContent = `Welcome, ${userData.name}`;
+            // Dynamically update the username display with data from the backend
+            const usernameDisplay = document.getElementById("username-display");
+            if (usernameDisplay && userData.username) {
+                usernameDisplay.textContent = userData.username;
             }
         } else {
             console.error("Failed to fetch user profile, status:", response.status);
