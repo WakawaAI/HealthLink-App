@@ -7,7 +7,8 @@ import datetime
 from functools import wraps
 
 app = Flask(__name__)
-CORS(app)
+# URL of the exact frontend URL
+CORS(app, origins=["https://healthlink-frontend-bx3m.onrender.com"], supports_credentials=True)
 
 # --- CONFIGURATION ---
 app.config['SECRET_KEY'] = 'your_super_secret_key' # Used to sign the JWT tokens
