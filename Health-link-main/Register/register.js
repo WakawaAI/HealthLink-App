@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById("password").value;
 
         try {
-            const response = await fetchFromAPI("/register", {
+            const response = await fetchFromAPI("/api/register", {
                 method: "POST",
                 body: JSON.stringify({ name, email, password })
             });
