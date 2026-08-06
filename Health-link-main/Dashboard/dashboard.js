@@ -24,16 +24,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        // Fetch user data from the backend
-        const response = await fetchFromAPI("/user/profile", { method: "GET" });
+        // Fetch the logged-in user's profile from your backend route with the bearer token
+        const response = await fetchFromAPI("/api/user/profile", {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${token}`
+            }
+        });
 
         if (response.ok) {
             const userData = await response.json();
             
-            // Inject dynamic data into the HTML
-            const usernameDisplay = document.getElementById("username-display");
-            if (usernameDisplay) {
-                usernameDisplay.innerText = userData.username;
+            // Dynamically update the welcome message with the user's actual name
+            const welcomeElement = document.getElementById("welcome-message");
+            if (welcomeElement && userData.name) {
+                welcomeElement.textContent = `Welcome, ${userData.name}`;
             }
         } else {
             console.error("Failed to fetch user profile, status:", response.status);
