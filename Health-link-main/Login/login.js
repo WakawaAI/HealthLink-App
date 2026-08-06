@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const password = document.getElementById("password").value;
 
         try {
-            const response = await fetchFromAPI("/login", {
+            // Updated to include the /api prefix matching your Flask backend route
+            const response = await fetchFromAPI("/api/login", {
                 method: "POST",
                 body: JSON.stringify({ email, password })
             });
