@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
                 alert("Registration successful! Please log in.");
                 // Redirect to login page after successful registration
-                window.location.href = "Login.html"; 
+                window.location.href = "../Login/Login.html"; 
             } else {
                 const errorData = await response.json();
                 alert(`Registration failed: ${errorData.message || "Please try again."}`);
